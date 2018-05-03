@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>My first styled page</title>
+  <link href="{{site.baseurl}}/css/mystyle.css" rel="stylesheet">
+  <meta charset="utf-8" http-quiv="content-type" content="text/html">
+</head>
+
+<body>
+
+<!-- Site navigation menu -->
+<nav>
+{% include nav.html %}
+</nav>
+<!-- Main content -->
+
+{{content}}
+
+<!-- Sign and date the page, it's only polite! -->
+<footrer>
+    {% include footer.html %}
+</footrer>
+</body>
+</html>
